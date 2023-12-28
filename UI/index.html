@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="style.css">
+    <title>Chat.li</title>
+</head>
+
+<body>
+    <div id="root">
+        <div class="join-chat-container">
+            <h1>Join Chat</h1>
+            <div class="select-avatar-container">Avatars <br>coming soon</div>
+            <form class="join-chat-form">
+                <div class="username-input-container">
+                    <input id="username-input" name="usernameInput" type="text" placeholder="Enter username" required>
+                    <button id="random-username-btn" title="Generate random username"
+                        class="material-symbols-outlined">shuffle</button>
+                </div>
+                <button type="submit">Start a chat</button>
+            </form>
+        </div>
+
+        <div class="main-app-ui hide">
+            <div class="chat-header">
+                <div class="chatroom-title">
+                    Chat room <span> #001</span>
+                </div>
+
+                <button class="leave-room material-symbols-outlined">logout</button>
+
+            </div>
+            <div class="messages-display-container">
+                <!-- <div class="message-box sent primary">
+                    <div class="avatar"></div>
+                    <div class="sender-details-header">~Abhi</div>
+                    <div class="message-content-container">Hello!</div>
+                </div> -->
+                <!-- <div class="message-box recieved primary">
+                    <div class="avatar"></div>
+                    <div class="sender-details-header">~user1wer</div>
+                    <div class="message-content-container">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, assumenda qui. Accusantium, alias sint soluta dolorum impedit iure, optio qui enim laborum recusandae, rerum illum debitis mollitia sunt maxime quod aliquid tenetur. Nisi placeat nostrum incidunt aliquid asperiores temporibus, cum officiis veniam itaque, libero possimus distinctio corrupti odio illum nobis.
+                    </div>                    
+                </div> -->
+            </div>
+            <div class="message-form-container">
+                <form id="create-message-form">
+                    <div class="message-input-container">
+                        <button type="menu" class="emoji-button material-symbols-outlined"
+                            style="font-family: 'Material Symbols Outlined';">mood</button>
+                        <input type="text" name="messageInput" id="message-input" placeholder="Message">
+                    </div>
+                    <button type="submit" id="send-message" class="material-symbols-outlined">send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"
+        integrity="sha384-mZLF4UVrpi/QTWPA7BjNPEnkIfRFn4ZEO3Qt/HFklTJBj/gBOV8G3HcKn4NfQblz"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+
+<script src="srcipt.js"></script>
+<script src="index.js"></script>
+
+</html>
